@@ -42,6 +42,12 @@
     },
     "default_popup": "popup/popup.html",
     "default_title": "Popup Title"
+  },
+
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true,
+    "chrome_style": true
   }
 
 }
