@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Uncommon Hacks WebExtension Starter",
+  "name": "WebExtension Starter",
   "version": "1.0",
   "description": "",
 
@@ -17,7 +17,7 @@
 
   "background": {
     "scripts": [
-      "lib/browser-polyfill.min.js",
+      "lib/browser-polyfill.js",
       "background/background.js"
     ]
   },
@@ -27,7 +27,7 @@
       "matches": ["<all_urls>"],
       "exclude_matches": ["*://*/_/chrome/newtab*"],
       "js": [
-        "lib/browser-polyfill.min.js",
+        "lib/browser-polyfill.js",
         "content/content.js"
       ],
       "run_at": "document_idle", 
