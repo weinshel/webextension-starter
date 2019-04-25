@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "WebExtension Starter",
+  "name": "New Tab Page",
   "version": "1.0",
   "description": "",
 
   "icons": {
-    "48": "icons/uncommon48.png",
-    "96": "icons/uncommon96.png"
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
   },
 
 
@@ -37,17 +37,21 @@
   
   "browser_action": {
     "default_icon": {
-      "19": "icons/uncommon19.png",
-      "38": "icons/uncommon38.png"
+      "19": "icons/icon19.png",
+      "38": "icons/icon38.png"
     },
     "default_popup": "popup/popup.html",
-    "default_title": "Popup Title"
+    "default_title": "Popup title"
   },
 
   "options_ui": {
     "page": "options/options.html",
     "browser_style": true,
     "chrome_style": true
+  },
+    
+  "chrome_url_overrides" : {
+    "newtab": "newtab/index.html"
   }
 
 }
